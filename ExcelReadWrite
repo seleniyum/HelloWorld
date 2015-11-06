@@ -36,6 +36,12 @@ public class ExcelReadWrite {
 		workbook = new HSSFWorkbook(fis); 		// passing fis to workbook
 		sheet = workbook.getSheetAt(0);			// taking the first sheet at index 0
 		
+	/*	int rowcount = sh.getLastRowNum();
+		int colcount= sh.getRow(0).getPhysicalNumberOfCells();//Additional ways of working with
+		System.out.println("Total Columns are"+(colcount));   //Finding out Column Numbers
+		
+		System.out.println("Total Rows are" +(rowcount+1));
+	*/	
 	}
 	
 	public int getSheetRows(String sheetName) { // creating a class to work with Sheet Row count
